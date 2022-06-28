@@ -1,24 +1,18 @@
-// import './App.css';
+import style from './App.module.css';
+import { InputForm } from './components/inputForm/InputForm.jsx';
+import { FilterForm } from './components/filterForm/FilterForm.jsx';
+import { ContactsList } from './components/contactsList/ContactsList.jsx';
 
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
+const App = () => {
+    return (
+        <div>
+            <h2 className={style.title}>Phonebook</h2>
+            <InputForm />
+            <h2 className={style.title}>Contacts</h2>
+            <FilterForm />
+            <ContactsList />
+        </div>
+    );
+};
 
-// export default App;
+export default App;
